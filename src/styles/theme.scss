@@ -1,0 +1,24 @@
+@use 'color-palette';
+@use 'typography';
+@use '@angular/material' as mat;
+@include mat.core();
+
+/* Seta as cores da paleta */
+$personal-primary-color: mat.define-palette(color-palette.$custom-primary-color);
+$personal-accent-color: mat.define-palette(color-palette.$custom-accent-color);
+$personal-warn-color: mat.define-palette(color-palette.$custom-warn-color);
+
+/* Cria o Tema */
+$personal-light-theme: mat.define-light-theme((
+  color: (
+    primary: $personal-primary-color,
+    accent: $personal-accent-color,
+    warn: $personal-warn-color,
+  ),
+  typography: (
+    typography: typography.$portal-typography,
+  )
+));
+
+/* seta o tema */
+@include mat.all-component-themes($personal-light-theme);

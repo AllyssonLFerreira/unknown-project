@@ -1,1 +1,12 @@
-<p>shared-footer works!</p>
+<footer>
+  <div class="mat-toolbar mat-primary">
+    <app-shared-link-field
+      *ngFor=" let media of footerInit.props"
+      [image]="media.image"
+      [href]="media.href"
+      [text]="media.text"
+      imageType="src"
+    >
+    </app-shared-link-field> 
+  </div>
+</footer>

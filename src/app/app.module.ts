@@ -8,6 +8,7 @@ import { PublicModule } from './public/public.module';
 import { MaterialModule } from './core/modules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StoreModule } from '@ngrx/store';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StoreModule } from '@ngrx/store';
     PublicModule,
     MaterialModule,
     BrowserAnimationsModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

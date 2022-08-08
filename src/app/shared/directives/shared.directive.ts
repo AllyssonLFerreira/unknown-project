@@ -1,6 +1,6 @@
 import { Directive, Input } from '@angular/core';
 import { MatFormFieldAppearance } from '@angular/material/form-field';
-import { colorTypeModel } from '../models/Shared.model';
+import { colorTypeModel, imageTypeModel } from '../models/Shared.model';
 
 @Directive({
   selector: '[appDirectives]'
@@ -8,11 +8,14 @@ import { colorTypeModel } from '../models/Shared.model';
 export class SharedDirective {
   
   @Input() label?: string;
-  @Input() appearance: MatFormFieldAppearance = 'fill';
-  @Input() color: colorTypeModel = 'none';
-  @Input() placeholder: string = '';
   @Input() name?: string;
   @Input() icon?: string;
   @Input() text!: string;
-
+  @Input() href!: string;
+  @Input() image!: string;
+  @Input() placeholder: string = '';
+  @Input() color: colorTypeModel = 'none';
+  @Input() imageType: imageTypeModel = 'mat-icon';
+  @Input() appearance: MatFormFieldAppearance = 'fill';
+  @Input() hidden?: boolean;
 }

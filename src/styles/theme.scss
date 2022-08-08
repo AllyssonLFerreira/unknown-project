@@ -1,24 +1,28 @@
-@use 'color-palette';
-@use 'typography';
 @use '@angular/material' as mat;
-@include mat.core();
+@use 'typography';
+@use 'color-palette';
+@use 'sass:map';
 
-/* Seta as cores da paleta */
-$personal-primary-color: mat.define-palette(color-palette.$custom-primary-color);
-$personal-accent-color: mat.define-palette(color-palette.$custom-accent-color);
-$personal-warn-color: mat.define-palette(color-palette.$custom-warn-color);
+/* Set Dark colors */
+$primary-dark-color: mat.define-palette(color-palette.$custom-primary-color, 900);
+$accent-dark-color: mat.define-palette(color-palette.$custom-accent-color, A700);
+$warn-dark-color: mat.define-palette(color-palette.$custom-warn-color, A700);
+/* Set Light colors */
+$primary-light-color: mat.define-palette(color-palette.$custom-primary-color, 600);
 
-/* Cria o Tema */
-$personal-light-theme: mat.define-light-theme((
+/* Define-Themes */
+$dark-app-theme: mat.define-dark-theme((
   color: (
-    primary: $personal-primary-color,
-    accent: $personal-accent-color,
-    warn: $personal-warn-color,
+    primary: $primary-light-color,
+    accent: $accent-dark-color,
+    warn: $warn-dark-color
   ),
   typography: (
     typography: typography.$portal-typography,
   )
 ));
 
-/* seta o tema */
-@include mat.all-component-themes($personal-light-theme);
+@include mat.all-component-colors($dark-app-theme);
+@include mat.all-component-themes($dark-app-theme);
+@include mat.strong-focus-indicators-theme($dark-app-theme);
+

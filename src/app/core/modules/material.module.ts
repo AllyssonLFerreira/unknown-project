@@ -20,7 +20,6 @@ const MaterialComponents = [
   MatCardModule
 ]
 @NgModule({
-  imports: [ MaterialComponents ],
   exports: [ MaterialComponents ]
 })
 

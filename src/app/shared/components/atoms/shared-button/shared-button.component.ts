@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SharedDirective } from 'src/app/shared/directives/shared.directive';
+import { buttonTypeModel } from 'src/app/shared/models/Shared.model';
 
 @Component({
   selector: 'app-shared-button',
@@ -9,6 +10,7 @@ import { SharedDirective } from 'src/app/shared/directives/shared.directive';
 export class SharedButtonComponent extends SharedDirective {
 
   constructor() { super() }
-  /* Diretiva isDisabled ???? */
-
+  @Input() type: buttonTypeModel = 'simple';
+  @Input() isDisabled: boolean = false;
+  @Input() label?: string;
 }

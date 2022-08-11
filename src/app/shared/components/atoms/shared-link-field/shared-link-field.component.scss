@@ -1,5 +1,18 @@
+.card {
+  width: 200px;
+  border-radius: 4px;
+  margin: 20px;
+  padding: 10px 5px;
+  background: transparent;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 16px #262626;
+}
 
 a {
+  text-decoration: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 }

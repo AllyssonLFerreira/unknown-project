@@ -1,6 +1,7 @@
-<form class="login-card">
+<form [formGroup]="formLogin" (ngSubmit)="submit()" class="login-card box-shadow-style" >
   <div class="form-row">
     <app-shared-input-field
+      [parentForm]="getFormControl('user')"
       appearance="fill"
       label="Usuário"
       placeholder="Digite seu usuário"
@@ -10,6 +11,7 @@
   
   <div class="form-row">
     <app-shared-input-field
+      [parentForm]="getFormControl('pwd')"
       appearance="fill"
       label="Senha"
       placeholder="Digite sua senha"
@@ -18,8 +20,8 @@
   </div>
 
   <app-shared-button
+    [isDisabled]="!formLogin.valid"
     text="Here a go again!"
-    type="raised"
     color="accent">
   </app-shared-button>
 </form>

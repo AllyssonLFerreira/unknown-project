@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-shared-header',
   templateUrl: './shared-header.component.html',
@@ -10,6 +9,7 @@ export class SharedHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

@@ -22,7 +22,7 @@ export class CookieService {
     return '';
   }
 
-  public deleteCookie(cookieName) {
+  public deleteCookie(cookieName: any) {
     this.setCookie({name: cookieName, value: '', expireDays: -1})
   }
 

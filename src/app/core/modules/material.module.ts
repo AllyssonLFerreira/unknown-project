@@ -9,6 +9,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
+import { MatSidenavContainer } from '@angular/material/sidenav';
 
 const MaterialComponents = [
   MatToolbarModule,
@@ -20,6 +21,7 @@ const MaterialComponents = [
   MatInputModule,
   MatCardModule,
   MatTableModule,
+  
 ]
 @NgModule({
   exports: [ MaterialComponents ]

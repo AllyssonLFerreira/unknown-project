@@ -1,16 +1,15 @@
 <ng-container *ngIf="isMatIcon(); else svgStaticIcon">
-  <div class="card">
-    <a href="{{href}}" target="_blank">
+  <div class="card-links">
+    <a href="{{href}}" target="_blank" class="mat-headline">
       <mat-icon>{{icon}}</mat-icon>
     </a>
   </div>
 </ng-container>
 
 <ng-template #svgStaticIcon>
-  <div class="card">
-    <a href="{{ href }}" target="_blank">
-      <img alt="" loading="lazy"
-      src="{{ image }}">
+  <div class="card-links">
+    <a href="{{ href }}" target="_blank" class="mat-headline">
+      <img alt="" loading="lazy" src="{{ image }}">
       <p>{{text}}</p>
     </a>
   </div>

@@ -4,6 +4,7 @@ import { RegisterUnknownComponent } from './register-unknown/register-unknown.co
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { LoginComponent } from './login.component';
+import { MaterialModule } from 'src/app/core/modules/material.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { LoginComponent } from './login.component';
   imports: [
     CommonModule,
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MaterialModule
   ],
   exports: [
     LoginComponent

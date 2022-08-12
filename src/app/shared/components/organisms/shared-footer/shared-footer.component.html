@@ -1,12 +1,10 @@
-<footer>
-  <div class="mat-toolbar mat-primary">
-    <app-shared-link-field
-      *ngFor=" let media of footerInit.props"
-      [image]="media.image"
-      [href]="media.href"
-      [text]="media.text"
-      imageType="src"
-    >
-    </app-shared-link-field> 
-  </div>
+<footer class="mat-toolbar mat-primary">
+  <span class="mat-subheading-1">{{footerInit.copyright}}</span>
+    <div *ngFor=" let media of footerInit.SocialNetwork" class="social-media-card"> 
+      <app-shared-link-field class="teste"
+        [image]="media.image"
+        [href]="media.href"
+        imageType="src">
+      </app-shared-link-field> 
+    </div>
 </footer>

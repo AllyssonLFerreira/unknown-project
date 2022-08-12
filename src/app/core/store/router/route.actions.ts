@@ -7,4 +7,3 @@ export const goToRegisterUnknown = createAction (
 export const goToLogin = createAction(
   '[Route] go to login'
 );
-

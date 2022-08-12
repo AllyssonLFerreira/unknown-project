@@ -1,0 +1,38 @@
+@import "../../../styles/animations.scss";
+
+.login-container {
+  display: grid;
+  align-content: space-evenly;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.login-card {
+  margin: 100px 0px 30px 0;
+  max-width: 650px;
+  padding: 50px 40px;
+  border-radius: 4px;
+  grid-area: auto;
+}
+
+.form-row {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.sign-in { 
+  grid-area: auto;
+  margin-left: 5px;
+  max-width: 545px; 
+}
+.sign-in a {
+  padding-left: 1px;
+  color: inherit;
+  animation: text-shadow-sign 4s 0.5s infinite alternate both;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+}

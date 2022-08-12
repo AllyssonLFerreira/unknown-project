@@ -4,7 +4,7 @@ import { SharedDirective } from './directives/shared.directive';
 import { FormDirective } from './directives/form.directive';
 import { MaterialModule } from '../core/modules/material.module';
 import { ReactiveFormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { NgxSkeletonLoaderModule } from "ngx-skeleton-loader";
 /* componentes */
 import { SharedInputFieldComponent } from './components/atoms/shared-input-field/shared-input-field.component';
 import { SharedButtonComponent } from './components/atoms/shared-button/shared-button.component';
@@ -27,7 +27,8 @@ import { SharedTableComponent } from './components/organisms/shared-table/shared
   imports: [
     CommonModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxSkeletonLoaderModule
   ],
   exports: [
     SharedInputFieldComponent,

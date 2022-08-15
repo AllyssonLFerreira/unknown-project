@@ -1,6 +1,6 @@
 import {ComponentStore} from '@ngrx/component-store';
 import {Observable} from "rxjs";
-import {ErrorModel} from "../common/error.model";
+import {ErrorModel} from "../../models/error.model";
 import {HttpErrorResponse} from "@angular/common/http";
 import {BaseBuilder} from "./base.builder";
 

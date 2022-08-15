@@ -22,7 +22,7 @@ import { SharedTableComponent } from './components/organisms/shared-table/shared
     SharedFooterComponent,
     SharedLinkFieldComponent,
     FormDirective,
-    SharedTableComponent
+    SharedTableComponent,
   ],
   imports: [
     CommonModule,
@@ -30,13 +30,13 @@ import { SharedTableComponent } from './components/organisms/shared-table/shared
     ReactiveFormsModule,
     NgxSkeletonLoaderModule
   ],
-  exports: [
-    SharedInputFieldComponent,
-    SharedButtonComponent,
-    SharedHeaderComponent,
-    SharedFooterComponent,
-    SharedLinkFieldComponent,
-    SharedTableComponent
-  ],
+    exports: [
+        SharedInputFieldComponent,
+        SharedButtonComponent,
+        SharedHeaderComponent,
+        SharedFooterComponent,
+        SharedLinkFieldComponent,
+        SharedTableComponent,
+    ],
 })
 export class SharedModule { }

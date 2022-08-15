@@ -1,15 +1,17 @@
 import {ComponentStore} from '@ngrx/component-store';
 import {Observable} from "rxjs";
-import {ErrorModel} from "../../models/error.model";
+import {ErrorModel} from "../../core/models/error.model";
 import {HttpErrorResponse} from "@angular/common/http";
 import {BaseBuilder} from "./base.builder";
+import {Store} from "@ngrx/store";
+import {AppState} from "../app.state";
 
 export interface BaseEntity {
   error?: ErrorModel;
 }
 
 export class BaseStore<T extends BaseEntity> extends ComponentStore<T> {
-  constructor(defaultState?: T) {
+  constructor( private readonly _store: Store<AppState>, defaultState?: T) {
     super(defaultState);
   }
 

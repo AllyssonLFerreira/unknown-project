@@ -3,10 +3,10 @@ import { Injectable } from "@angular/core";
 import { Router } from "@angular/router";
 import { tapResponse } from "@ngrx/component-store";
 import { catchError, EMPTY, Observable, switchMap, tap } from "rxjs";
-import { AuthService } from "../../integration/Auth/auth.service";
-import { CookieService } from "../../integration/Auth/Cookie/cookie";
+import { AuthService } from "../../core/integration/Auth/auth.service";
+import { CookieService } from "../../core/integration/Auth/Cookie/cookie";
 
-import { AuthRequest, AuthResponse } from "../../models/auth.model";
+import { AuthRequest, AuthResponse } from "../../core/models/auth.model";
 import { BaseEntity, BaseStore } from "../base/base.store";
 import { LoaderStore } from "../loader/loader.store";
 export interface AuthState extends BaseEntity {
@@ -62,7 +62,7 @@ export class AuthStore extends BaseStore<AuthState> {
             this._setCookieUser(auth.user.name);
             return auth.user;
           }),
-          catchError(() => EMPTY) 
+          catchError(() => EMPTY)
         )
       )
     } */

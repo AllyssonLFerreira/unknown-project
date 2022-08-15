@@ -1,6 +1,7 @@
-export interface GetResponse {
-  counts: number;
-  results: games[];  // Array<T>; //
+export interface ApiResponse {
+  count: number,
+  next: string
+  results: games[];
   previous: undefined;
 }
 
@@ -10,7 +11,7 @@ export interface games {
   name: string;
   released: Date;
   tba: boolean;
-  background_image: {};
+  background_image: string;
   rating: number;
   rating_top: number;
   ratings: [];
@@ -26,12 +27,13 @@ export interface games {
   reviews_count: number;
   platforms: Platforms[];
   parent_platforms: [];
-  genres: Genres[]; //Array<Genre>;//
+  genres: Genres[];
   stores: [];
   clip: undefined;
   tags: [];
   esrb_rating: {};
   short_screenshots: Screenshots[];
+  publisher: 'string';
 };
 
 export interface Platforms {
@@ -44,6 +46,7 @@ export interface Platforms {
   games_count: number;
   image_background: {};
 };
+
 export interface Genres {
   id: number;
   name: string;
@@ -51,6 +54,7 @@ export interface Genres {
   games_count: number;
   image_background: {};
 };
+
 export interface Screenshots {
   id: number;
   image: {};

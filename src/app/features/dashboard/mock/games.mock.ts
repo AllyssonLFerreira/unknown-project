@@ -1,10 +1,9 @@
-{
+export const GamesMock = {
   "results": [
     {
       "id": "1",
       "name": "Castlevania Simphony of the Night",
       "platforms": "Playstation 1",
-      "rating": "4.93",
       "genres": "MetroidVania",
       "release": "20/03/1997",
       "publisher": "Konami",
@@ -13,9 +12,8 @@
     },
     {
       "id": "2",
-      "name": "Metal Gear Solid: Snake Eater",
+      "title": "Metal Gear Solid: Snake Eater",
       "platforms": "Playstation 2",
-      "rating": "4.93",
       "genres": "Stealth",
       "release": "17/11/2004",
       "publisher": "Konami",
@@ -24,54 +22,13 @@
     },
     {
       "id": "3",
-      "name": "The Last of Us",
+      "title": "The Last of Us",
       "platforms": "Playstation 3",
-      "rating": "4.93",
       "genres": "Stealth",
       "release": "",
       "publisher": "Sony Entertainment",
       "director": "",
       "background_image":"https://pt.wikipedia.org/wiki/The_Last_of_Us#/media/Ficheiro:The_Last_of_Us_capa.png"
     },
-    {
-      "id": "",
-      "title": "",
-      "platforms": "",
-      "genres": "",
-      "release": "",
-      "publisher": "",
-      "director": "",
-      "background_image":""
-    },
-    {
-      "id": "",
-      "title": "",
-      "platforms": "",
-      "genres": "",
-      "release": "",
-      "publisher": "",
-      "director": "",
-      "background_image":""
-    },
-    {
-      "id": "",
-      "title": "",
-      "platforms": "",
-      "genres": "",
-      "release": "",
-      "publisher": "",
-      "director": "",
-      "background_image":""
-    },
-    {
-      "id": "",
-      "title": "",
-      "platforms": "",
-      "genres": "",
-      "release": "",
-      "publisher": "",
-      "director": "",
-      "background_image":""
-    }
   ]
 }

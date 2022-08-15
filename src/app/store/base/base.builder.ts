@@ -1,6 +1,6 @@
 import { Builder } from "builder-pattern";
 import { HttpErrorResponse } from "@angular/common/http";
-import { ErrorModel } from "../../models/error.model";
+import { ErrorModel } from "../../core/models/error.model";
 
 export class BaseBuilder {
   static build(http: HttpErrorResponse): ErrorModel {

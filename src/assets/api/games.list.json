@@ -1,76 +1,77 @@
 {
-  "access_token": "kajdajndasak85sdasd...",
-  "refresh_token": "kajdajndasak85sdasd...",
-  "data": [ 
+  "results": [
     {
       "id": "1",
-      "title": "Castlevania Simphony of the Night",
-      "platform": "Playstation 1",
-      "genre": "MetroidVania",
-      "release_date": "20/03/1997",
+      "name": "Castlevania Simphony of the Night",
+      "platforms": "Playstation 1",
+      "rating": "4.93",
+      "genres": "MetroidVania",
+      "release": "20/03/1997",
       "publisher": "Konami",
       "director": "Koji Igarashi",
-      "img":""
+      "background_image":"https://castlevania.fandom.com/wiki/Castlevania:_Symphony_of_the_Night?file=Castlevania+-+Symphony+of+the+Night+%28gamebox%29.jpg"
     },
     {
       "id": "2",
-      "title": "Metal Gear Solid: Snake Eater",
-      "platform": "Playstation 2",
-      "genre": "Stealth",
-      "release_date": "17/11/2004",
+      "name": "Metal Gear Solid: Snake Eater",
+      "platforms": "Playstation 2",
+      "rating": "4.93",
+      "genres": "Stealth",
+      "release": "17/11/2004",
       "publisher": "Konami",
       "director": "Hideo Kojima",
-      "img":""
+      "background_image":"https://picfiles.alphacoders.com/120/12033.jpg"
     },
     {
       "id": "3",
-      "title": "The Last of Us",
-      "platform": "Plastation 3",
-      "genre": "",
-      "release_date": "",
+      "name": "The Last of Us",
+      "platforms": "Playstation 3",
+      "rating": "4.93",
+      "genres": "Stealth",
+      "release": "",
       "publisher": "Sony Entertainment",
       "director": "",
-      "img":""
+      "background_image":"https://pt.wikipedia.org/wiki/The_Last_of_Us#/media/Ficheiro:The_Last_of_Us_capa.png"
     },
     {
       "id": "",
       "title": "",
-      "platform": "",
-      "genre": "",
-      "release_date": "",
+      "platforms": "",
+      "genres": "",
+      "release": "",
       "publisher": "",
       "director": "",
-      "img":""
+      "background_image":""
     },
     {
       "id": "",
       "title": "",
-      "platform": "",
-      "genre": "",
-      "release_date": "",
+      "platforms": "",
+      "genres": "",
+      "release": "",
       "publisher": "",
       "director": "",
-      "img":""
+      "background_image":""
     },
     {
       "id": "",
       "title": "",
-      "platform": "",
-      "genre": "",
-      "release_date": "",
+      "platforms": "",
+      "genres": "",
+      "release": "",
       "publisher": "",
       "director": "",
-      "img":""
+      "background_image":""
     },
     {
       "id": "",
       "title": "",
-      "platform": "",
-      "genre": "",
-      "release_date": "",
+      "platforms": "",
+      "genres": "",
+      "release": "",
       "publisher": "",
       "director": "",
-      "img":""
+      "background_image":""
     }
   ]
 }

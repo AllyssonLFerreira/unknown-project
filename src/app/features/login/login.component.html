@@ -1,0 +1,32 @@
+<div class="login-container">
+  <form [formGroup]="formLogin" (ngSubmit)="submit()" class="login-card box-shadow-style">
+    <div class="form-row">
+      <app-shared-input-field [parentForm]="getFormControl('user')"
+        appearance="fill"
+        label="Usuário"
+        placeholder="Digite seu usuário"
+        icon="account_box">
+      </app-shared-input-field>
+    </div>
+    
+    <div class="form-row">
+      <app-shared-input-field [parentForm]="getFormControl('pwd')"
+        appearance="fill"
+        label="Senha"
+        placeholder="Digite sua senha"
+        icon="password">
+      </app-shared-input-field>
+    </div>
+
+    <app-shared-button [isDisabled]="!formLogin.valid"
+      text="Here a go again!"
+      color="accent">
+    </app-shared-button>
+  </form>
+
+  <div class="sign-in">
+    <span>“Estradas? Para onde estamos indo, não precisamos de estradas.” <a> <strong>become a unknown</strong></a> </span>
+    <div class="line mat-toolbar mat-primary"></div>
+  </div>
+</div>
+ 

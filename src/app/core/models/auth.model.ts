@@ -5,5 +5,8 @@ export interface AuthRequest {
 
 export interface AuthResponse {
   accessToken: string,
-  user: string
+  user: {
+    name: string;
+  };
 }
+

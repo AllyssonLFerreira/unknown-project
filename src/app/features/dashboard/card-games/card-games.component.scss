@@ -1,0 +1,11 @@
+.container-card {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+}
+.card-props {
+  max-width: 425px;
+  margin: 15px;
+}
+
+mat-icon { color: #f5f504 };

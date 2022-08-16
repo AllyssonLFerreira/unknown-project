@@ -10,6 +10,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 
+
 const MaterialComponents = [
   MatToolbarModule,
   MatNativeDateModule,
@@ -20,6 +21,7 @@ const MaterialComponents = [
   MatInputModule,
   MatCardModule,
   MatTableModule,
+  
 ]
 @NgModule({
   exports: [ MaterialComponents ]

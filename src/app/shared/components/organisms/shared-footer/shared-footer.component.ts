@@ -10,21 +10,19 @@ export class SharedFooterComponent {
   constructor() { }
 
   footerInit = {
-    props: [
+    copyright: "Dev. Allysson Ferreira Copyright © 2022.",
+    SocialNetwork: [
       {
-        image: '../../../../../assets/icons/github.svg',
-        href: 'https://github.com/AllyssonLFerreira/',
-        text: 'GitHub'
+        image: '../../../../../assets/icons/brands/git64xlight.svg',
+        href: 'https://github.com/AllyssonLFerreira/'
       },
       {
-        image: '../../../../../assets/icons/linkedin.svg',
+        image: '../../../../../assets/icons/brands/linkedin64x.svg',
         href: 'https://www.linkedin.com/in/allyssonferreira/',
-        text: 'Linkedin'
       },
       {
-        image: '../../../../../assets/icons/instagram.svg',
+        image: '../../../../../assets/icons/brands/instagram64x.svg',
         href: 'https://www.instagram.com/cfallyssonferreira/',
-        text: 'Instagram'
       }
     ]
   }

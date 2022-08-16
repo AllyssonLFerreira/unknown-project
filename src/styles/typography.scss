@@ -18,3 +18,14 @@ $portal-typography: mat.define-typography-config(
   $caption:  mat.define-typography-level(12px, 18px, 400),
   $button:  mat.define-typography-level(14px, 34px, 600),
 );
+
+$custom-success: mat.define-palette(color-palette.$sucess-custom-color);
+
+@function apply-extra-colors($theme) {
+  @return map.deep-merge($theme, (
+    success: $custom-success,
+    color: (
+      success: $custom-success,
+    )
+  ));
+}

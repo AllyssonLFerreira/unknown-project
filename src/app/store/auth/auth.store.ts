@@ -9,6 +9,8 @@ import { CookieService } from "../../core/integration/Auth/Cookie/cookie";
 import { AuthRequest, AuthResponse } from "../../core/models/auth.model";
 import { BaseEntity, BaseStore } from "../base/base.store";
 import { LoaderStore } from "../loader/loader.store";
+import {Store} from "@ngrx/store";
+import {AppState} from "../app.state";
 export interface AuthState extends BaseEntity {
   authResponse?: AuthResponse
   user?: AuthResponse["user"]
@@ -22,8 +24,9 @@ export class AuthStore extends BaseStore<AuthState> {
     private readonly _authApiService: AuthService,
     private readonly _loaderStore: LoaderStore,
     private readonly _cookieService: CookieService,
-    private router: Router
-    ) { super(initialState) }
+    private router: Router,
+    _store: Store<AppState>
+    ) { super(_store, initialState) }
 
     readonly auth = this.effect((auth$: Observable<AuthRequest>) => {
       return auth$.pipe(
@@ -55,17 +58,7 @@ export class AuthStore extends BaseStore<AuthState> {
       )
     });
 
-   /*  readonly fetchUserAuthentication = this.effect((auth$:Observable<string | undefined>) => {
-      return auth$.pipe(
-        map(auth => {
-            this.setUser(auth.user);
-            this._setCookieUser(auth.user.name);
-            return auth.user;
-          }),
-          catchError(() => EMPTY)
-        )
-      )
-    } */
+
     private _setAuthCookies(auth: AuthResponse): void {
       this._cookieService.set('accessToken', auth.accessToken);
       this._setCookieUser(auth.user.name);
